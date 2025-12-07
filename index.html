@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .bio-section {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .bio-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+            flex-shrink: 0;
+        }
+
+        .bio-content {
+            flex: 1;
+        }
+
+        .work-example {
+            border-left: 4px solid #667eea;
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .work-example h3 {
+            color: #764ba2;
+            margin-bottom: 1rem;
+        }
+
+        .reflection {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .reflection h4 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .resume-link {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+
+        .resume-link:hover {
+            background: #764ba2;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .bio-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Your Name</div>
+            <ul>
+                <li><a href="#bio">About</a></li>
+                <li><a href="#work">Portfolio</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Professional Digital Portfolio</h1>
+            <p>Showcasing my technical editing and professional work</p>
+        </section>
+
+        <section id="bio">
+            <div class="bio-section">
+                <div class="bio-photo">YN</div>
+                <div class="bio-content">
+                    <h2>About Me</h2>
+                    <p>Welcome to my digital portfolio! I'm a [your profession/role] with experience in technical editing, writing, and communication. This portfolio showcases my professional achievements, educational experiences, and reflective insights into my work.</p>
+                    <p style="margin-top: 1rem;">I'm passionate about [your interests/focus areas] and committed to delivering high-quality work that meets the needs of diverse audiences.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work">
+            <h2>Portfolio Work</h2>
+            
+            <div class="work-example">
+                <h3>Editor Statement</h3>
+                <p><strong>Project:</strong> My approach to technical editing emphasizes clarity, accuracy, and audience awareness. I believe that effective editing goes beyond correcting grammar—it involves understanding the document's purpose and ensuring the content serves its intended readers.</p>
+                
+                <div class="reflection">
+                    <h4>Reflection</h4>
+                    <p>Through developing this statement, I've clarified my editing philosophy and identified my core values as an editor. This process has helped me articulate my approach to potential clients and collaborators.</p>
+                </div>
+
+                <div class="skills-list">
+                    <span class="skill-tag">Critical Thinking</span>
+                    <span class="skill-tag">Audience Analysis</span>
+                    <span class="skill-tag">Professional Writing</span>
+                </div>
+            </div>
+
+            <div class="work-example">
+                <h3>Technical Memorandum Edit</h3>
+                <p><strong>Project:</strong> Edited a technical memorandum for [organization/context], focusing on clarity, consistency, and adherence to organizational style guidelines.</p>
+                
+                <div class="reflection">
+                    <h4>Process</h4>
+                    <p>I began by reviewing the document's purpose and audience, then created a comprehensive style sheet to ensure consistency. Key challenges included balancing technical accuracy with readability for a non-specialist audience.</p>
+                    
+                    <h4>Skills Demonstrated</h4>
+                    <p>This project showcased my ability to work with technical content, develop style guidelines, and communicate complex information clearly. I learned to balance precision with accessibility, a skill I'll apply in future editing projects.</p>
+                </div>
+
+                <div class="skills-list">
+                    <span class="skill-tag">Technical Editing</span>
+                    <span class="skill-tag">Style Guide Development</span>
+                    <span class="skill-tag">Attention to Detail</span>
+                </div>
+            </div>
+
+            <div class="work-example">
+                <h3>Academic Article Edit</h3>
+                <p><strong>Project:</strong> Comprehensive edit of an academic article, including structural reorganization, citation checking, and clarity improvements.</p>
+                
+                <div class="reflection">
+                    <h4>Process</h4>
+                    <p>I conducted multiple editing passes, focusing first on structure and organization, then on sentence-level clarity, and finally on citation accuracy and formatting. Time constraints required efficient prioritization of editing tasks.</p>
+                    
+                    <h4>Skills Demonstrated</h4>
+                    <p>This project developed my ability to work within tight deadlines while maintaining high quality standards. I enhanced my skills in academic editing conventions and learned to provide constructive feedback to authors.</p>
+                </div>
+
+                <div class="skills-list">
+                    <span class="skill-tag">Academic Editing</span>
+                    <span class="skill-tag">Citation Management</span>
+                    <span class="skill-tag">Time Management</span>
+                    <span class="skill-tag">Feedback Delivery</span>
+                </div>
+            </div>
+
+            <div class="work-example">
+                <h3>Technical Report Edit</h3>
+                <p><strong>Project:</strong> Edited a comprehensive technical report, ensuring clarity, consistency, and appropriate formatting for the intended audience.</p>
+                
+                <div class="reflection">
+                    <h4>Process</h4>
+                    <p>I collaborated with the report authors to understand technical content, then developed a style sheet to maintain consistency throughout the document. Challenges included working with complex data visualizations and ensuring technical terminology was accessible.</p>
+                    
+                    <h4>Skills Demonstrated</h4>
+                    <p>This project highlighted my collaboration skills and ability to work with subject matter experts. I learned to balance stakeholder input with editorial best practices, a valuable skill for future collaborative projects.</p>
+                </div>
+
+                <div class="skills-list">
+                    <span class="skill-tag">Collaboration</span>
+                    <span class="skill-tag">Technical Communication</span>
+                    <span class="skill-tag">Document Design</span>
+                    <span class="skill-tag">Stakeholder Management</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume">
+            <h2>Resume & Experience</h2>
+            <p>Download my current resume to learn more about my professional background, education, and skills.</p>
+            <a href="#" class="resume-link">Download Resume (PDF)</a>
+            
+            <div style="margin-top: 2rem;">
+                <h3>Key Experience</h3>
+                <p style="margin-top: 1rem;">Throughout my career, I've developed strong skills in technical editing, project management, and client communication. My experience includes working with diverse clients and industries, managing multiple projects simultaneously, and delivering high-quality results within deadlines.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+            <p style="margin-top: 1rem;">
+                <strong>Email:</strong> your.email@example.com<br>
+                <strong>Location:</strong> Your City, State
+            </p>
+            
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Professional Digital Portfolio</p>
+    </footer>
+</body>
+</html>
